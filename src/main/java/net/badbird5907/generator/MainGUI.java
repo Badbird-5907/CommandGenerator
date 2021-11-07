@@ -44,7 +44,7 @@ public class MainGUI {
                             replace("%price%", String.valueOf(INSTANCE.price.getValue()));
             System.out.println(s);
             Toolkit.getDefaultToolkit().getSystemClipboard().setContents(new StringSelection(s), null);
-            JOptionPane.showMessageDialog(null,"Command has been copied to your clipboard:\n" + s);
+            JOptionPane.showMessageDialog(null, "Command has been copied to your clipboard:\n" + s);
         });
     }
 
@@ -83,7 +83,7 @@ public class MainGUI {
         panel1.add(mainPane, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, null, new Dimension(200, 200), null, 0, false));
         final JPanel panel2 = new JPanel();
         panel2.setLayout(new GridLayoutManager(6, 6, new Insets(0, 0, 0, 0), -1, -1));
-        mainPane.addTab("Villager Generator", panel2);
+        mainPane.addTab("Librarian Enchant", panel2);
         goButton = new JButton();
         goButton.setText("Go!");
         panel2.add(goButton, new GridConstraints(5, 0, 1, 6, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
