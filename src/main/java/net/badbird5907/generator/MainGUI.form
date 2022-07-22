@@ -41,6 +41,7 @@
                 </constraints>
                 <properties>
                   <text value="Villager ID"/>
+                  <toolTipText value="Villager UID"/>
                 </properties>
               </component>
               <vspacer id="26b42">
@@ -52,7 +53,11 @@
                 <constraints>
                   <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
-                <properties/>
+                <properties>
+                  <enabled value="true"/>
+                  <name value=""/>
+                  <toolTipText value="buy amount, leave at 0 for default mc lootable for random_buy"/>
+                </properties>
               </component>
               <hspacer id="958ca">
                 <constraints>
@@ -67,13 +72,16 @@
                 </constraints>
                 <properties>
                   <text value="Enchant"/>
+                  <toolTipText value="Enchant name"/>
                 </properties>
               </component>
               <component id="cc7c1" class="javax.swing.JSpinner" binding="enchantLevel">
                 <constraints>
                   <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
-                <properties/>
+                <properties>
+                  <toolTipText value="Enchant level"/>
+                </properties>
               </component>
               <component id="9d1e9" class="javax.swing.JTextField" binding="buy">
                 <constraints>
@@ -82,14 +90,17 @@
                   </grid>
                 </constraints>
                 <properties>
-                  <text value="Item to buy Per emerald"/>
+                  <text value="%RANDOM_BUY%"/>
+                  <toolTipText value="Thing to buy (other enchant), leave at %RANDOM_BUY% and amount at 0 to have it use normal loottable"/>
                 </properties>
               </component>
               <component id="2d528" class="javax.swing.JSpinner" binding="price">
                 <constraints>
                   <grid row="3" column="0" row-span="1" col-span="6" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
-                <properties/>
+                <properties>
+                  <toolTipText value="Emeralds to buy the enchanted book for"/>
+                </properties>
               </component>
             </children>
           </grid>
