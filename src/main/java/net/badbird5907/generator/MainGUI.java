@@ -69,7 +69,7 @@ public class MainGUI {
             int buyAmount = (int) INSTANCE.buyAmount.getValue();
             if (buyAmount == 0) buyAmount = randBoolean ? 9 : 24;
             String s =
-                    BASE.replace("%id%", INSTANCE.villagerId.getText().toLowerCase()).
+                    BASE.replace("%id%", INSTANCE.villagerId.getText().toLowerCase().replace("/tp ", "").replace("/data get entity ", "")).
                             replace("%buyid%", INSTANCE.buy.getText().toLowerCase().replace("%random_buy%", randBoolean ? "emerald" : "paper")).
                             replace("%buycount%", String.valueOf(buyAmount)).
                             replace("%enchant%", INSTANCE.enchant.getText()).
