@@ -49,13 +49,14 @@
                   <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
                 </constraints>
               </vspacer>
-              <component id="5ff4f" class="javax.swing.JSpinner" binding="buyAmount">
+              <component id="a1d1c" class="javax.swing.JTextField" binding="buyAmount">
                 <constraints>
                   <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <enabled value="true"/>
                   <name value=""/>
+                  <text value="0"/>
                   <toolTipText value="buy amount, leave at 0 for default mc lootable for random_buy"/>
                 </properties>
               </component>
@@ -75,14 +76,6 @@
                   <toolTipText value="Enchant name"/>
                 </properties>
               </component>
-              <component id="cc7c1" class="javax.swing.JSpinner" binding="enchantLevel">
-                <constraints>
-                  <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <toolTipText value="Enchant level"/>
-                </properties>
-              </component>
               <component id="9d1e9" class="javax.swing.JTextField" binding="buy">
                 <constraints>
                   <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
@@ -94,12 +87,23 @@
                   <toolTipText value="Thing to buy (other enchant), leave at %RANDOM_BUY% and amount at 0 to have it use normal loottable"/>
                 </properties>
               </component>
-              <component id="2d528" class="javax.swing.JSpinner" binding="price">
+              <component id="e113f" class="javax.swing.JTextField" binding="price">
                 <constraints>
                   <grid row="3" column="0" row-span="1" col-span="6" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
+                  <text value="0"/>
                   <toolTipText value="Emeralds to buy the enchanted book for"/>
+                </properties>
+              </component>
+              <component id="c25a9" class="javax.swing.JTextField" binding="enchantLevel">
+                <constraints>
+                  <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="1" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="0"/>
                 </properties>
               </component>
             </children>
